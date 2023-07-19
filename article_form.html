@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enter the details</title>
+</head>
+<STYLE>
+    body{
+        background: greenyellow;
+    }
+    form{
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btnbtn-success{
+        height: 2rem;
+        width: 5rem;
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+    #TITLE{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #details{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</STYLE>
+<body>
+    <div>
+        <h1>DETAILS OF THE ARTICLE</h1>
+        <form action = "article.php"  class="text-center" method="post" enctype="multipart/form-data">
+            <input type="file" name = "image" class="form-control">
+            <div class="form-group">
+                <label for="TITLE">ENTER THE TITLE</label>
+                <textarea name="TITLE" id="TITLE" cols="180" rows="2"></textarea>
+                
+            </div>
+            <div class="form-group">
+                <label for="details">DETAILS: </label>
+                <textarea name="DETAILS" id="details" cols="180" rows="20"></textarea>
+            </div>
+            <input href="article.php" type="submit" name="upload" value="UPLOAD" class="btnbtn-success">
+        </form>
+    </div>
+</body>
+</html>
